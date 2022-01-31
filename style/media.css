@@ -1,0 +1,107 @@
+@media(max-width: 1175px) {
+    .films-container {
+        width: 69%;
+    } 
+    .section-films__item {
+        justify-content: space-around;
+    }
+    .main__title {
+        margin: 0 auto 48px;
+    }
+    .section-films__card:nth-child(1),
+    .section-films__card:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    /* .col__item-card:nth-child(3) {
+        grid-column: 1 / -1;
+    } */
+    .col__item {
+        grid-template-columns: repeat(auto-fit, minmax(264px, 1fr))
+    }
+    .ser__cards-sub-main {
+        grid-column: 1 / 2;
+    }
+    
+}
+@media (max-width: 990px) {
+    .col__item-card {
+        grid-column: 1 / 3;
+    }
+}
+@media(max-width: 850px) {
+    .section-films__item {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-films__card:nth-child(3) {
+        margin-bottom: 30px;
+    }
+    .ser__cards-content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ser__cards-desc {
+        text-align: justify;
+    }
+    .trailer::before {
+        background: rgba(255, 255, 255, .5);
+    }
+    .trailer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 660px) {
+    .intro__title {
+        font-size: 45px;
+        line-height: 36px;
+    }
+    .intro__desc {
+        margin-bottom: 30px;
+    }
+    .footer-content {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .header__list {
+        display: none;
+    }
+    .header__nav {
+        justify-content: center;
+    }
+    .ser__cards-title {
+        font-size: 35px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .ser__cards-desc {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width: 455px) {
+    .intro__title {
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .intro__btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro__btn >:first-child {
+        margin-bottom: 15px;
+    }
+    .ser__cards-title {
+        font-size: 28px;
+    }
+    .footer-content__span {
+        font-size: 15px;
+    }
+    .films-container {
+        width: 100%;
+    }
+}
